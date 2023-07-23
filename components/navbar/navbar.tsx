@@ -19,7 +19,7 @@ const NavBar = () => {
                         width={50}
                         height={50}
                         alt="Pratishthan Software Ventures"
-                        className="header-icon"
+                        className="header-icon img-fluid"
                     />
                 </Link>
                 <button

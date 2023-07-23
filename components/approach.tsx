@@ -3,7 +3,7 @@ import Image from "next/image";
 import ApproachImage from "../public/approachs.png";
 
 const styling = {
-  height: "100vh"
+  minHeight: "100vh"
 };
 
 const approachPoints = [
@@ -21,7 +21,7 @@ const approachPoints = [
 
 const Approach = () => {
   return (
-    <div style={styling} className="container p-5">
+    <div style={styling} className="container pt-6 pb-10">
       <h3><b>OUR</b> APPROACH</h3>
       <hr className="my-4" />
       <div className="row">
@@ -42,7 +42,7 @@ const Approach = () => {
         <div className="col-lg-6">
           <Image
             src={ApproachImage.src}
-            className="image-hover"
+            className="img-fluid"
             alt="approach"
             width={500}
             height={500}
@@ -54,7 +54,7 @@ const Approach = () => {
         {
           approachPoints.map((point, index) => {
             return (
-              <details className="col-lg-6" key={index} >
+              <details className="col-sm-6" key={index} >
                 <summary>{point.title}</summary>
                 <p className="text-start card card-body">{point.description}</p>
               </details>

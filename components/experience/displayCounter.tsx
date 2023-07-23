@@ -8,8 +8,8 @@ const counterStyling = {
     backgroundColor: "#f5f5f5",
     padding: "20px 0",
     borderRadius: "5px",
-    height: "100%",
-    width: "100%"
+    minHeight: "100%",
+    maxWidth: "100%"
 };
 
 const counterTextStyling = {

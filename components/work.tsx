@@ -1,7 +1,7 @@
 import React from "react";
 
 const styling = {
-    height: "100vh"
+    minHeight: "100vh"
 };
 
 const Work = () => {

@@ -1,6 +1,7 @@
 import React from "react";
 import DisplayCounter from "./displayCounter";
 import { faBriefcase, faCode, faUsers, faCogs } from "@fortawesome/free-solid-svg-icons";
+import { Container } from "react-dom";
 
 
 const displayItem = [{ 'text': 'YEARS OF EXPERIENCE', 'itemNumber': 20, iconClass: "fa fa-briefcase", icon: faBriefcase },
@@ -10,14 +11,14 @@ const displayItem = [{ 'text': 'YEARS OF EXPERIENCE', 'itemNumber': 20, iconClas
 
 
 const styling = {
-    height: "100vh",
+    minHeight: "100vh",
     backgroundColor: "#d9743f",
 };
 
 const Expectation = () => {
     return (
-        <div style={styling} className="p-5">
-            <div className="container">
+        <>
+            <div style={styling} className="container-fluid p-5">
                 <h3><b>OUR</b> EXPERIENCE</h3>
                 <hr className="my-4" />
                 <div className="row text-center">
@@ -41,7 +42,7 @@ const Expectation = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 };
 
