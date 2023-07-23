@@ -3,6 +3,7 @@ import Image from 'next/image';
 import NavItems from './navItem';
 import React from 'react';
 import Link from 'next/link';
+import logo from '../../public/logo.png';
 
 const navOptions = [{'name': 'Home', 'link': '/'}, {'name': 'About', 'link': '/about'}, {'name': 'Contact', 'link': '/contact'}];
 
@@ -14,7 +15,7 @@ const NavBar = () => {
             <div className="container-fluid">
                 <Link className="navbar-brand" href="/">
                     <Image
-                        src='/../public/logo.png'
+                        src={logo.src}
                         width={50}
                         height={50}
                         alt="Pratishthan Software Ventures"
