@@ -22,7 +22,7 @@ const BaseHeader = () => {
                         A Technology Firm that Partners in your Growth
                     </h1>
                     <p className="lead text-dark mb-5">
-                        We are who you find when you're looking for a technology partner
+                        {`We are who you find when you're looking for a technology partner`}
                     </p>
                 </div>
             </div>

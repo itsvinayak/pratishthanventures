@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import NavItems from './navItem';
 import React from 'react';
+import Link from 'next/link';
 
 const navOptions = [{'name': 'Home', 'link': '/'}, {'name': 'About', 'link': '/about'}, {'name': 'Contact', 'link': '/contact'}];
 
@@ -11,7 +12,7 @@ const NavBar = () => {
             className="navbar navbar-expand-lg navbar-light bg-light shadow-sm bg-body rounded fixed-top"
         >
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">
+                <Link className="navbar-brand" href="/">
                     <Image
                         src='/../public/logo.png'
                         width={50}
@@ -19,7 +20,7 @@ const NavBar = () => {
                         alt="Pratishthan Software Ventures"
                         className="header-icon"
                     />
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"

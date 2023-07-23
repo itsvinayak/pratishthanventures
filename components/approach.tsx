@@ -36,7 +36,7 @@ const Approach = () => {
             that we do.
           </p>
           <span className="lead">
-            It's all for the love of solving business problems.
+            {`It's all for the love of solving business problems.`}
           </span>
         </div>
         <div className="col-lg-6">
