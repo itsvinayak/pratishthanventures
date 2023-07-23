@@ -16,8 +16,12 @@ export const metadata: Metadata = {
 
 export const fonts = [inter]
 
+interface Props {
+    Component: any
+    pageProps: any
+}
 
-const RootLayout = ({ Component, pageProps }) => {
+const RootLayout = ({ Component, pageProps }: Props) => {
     useEffect(() => {
         require("bootstrap/dist/js/bootstrap.bundle.min.js");
     }, []);

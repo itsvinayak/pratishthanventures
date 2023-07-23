@@ -1,6 +1,13 @@
 import React from 'react';
 
-const NavItems = (props) => {
+interface NavItemsProps {
+    items: {
+        name: string;
+        link: string;
+    }[];
+}
+
+const NavItems = (props: NavItemsProps) => {
     return (
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {props.items.map((item, index) => {

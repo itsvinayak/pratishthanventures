@@ -16,15 +16,14 @@ const counterTextStyling = {
     fontSize: "0.8rem",
     fontWeight: "bold",
     marginTop: "10px",
-    marginBottom: 0,
+    marginBottom: "0",
     marginLeft: "10px",
     marginRight: "10px",
-    textAlign: "center"
+    textAlign: "center" as const
 };
 
 const counterIconStyling = {
     margin: "0 auto",
-    float: "none",
     fontSize: "40px",
     display: "table",
     color: "#FF5E00"
@@ -34,10 +33,10 @@ const counterNumberStyling = {
     fontSize: "2rem",
     fontWeight: "bold",
     marginTop: "10px",
-    marginBottom: 0,
+    marginBottom: "0",
     marginLeft: "10px",
     marginRight: "10px",
-    textAlign: "center"
+    textAlign: "center" as const
 };
 
 
@@ -54,9 +53,8 @@ const DisplayCounter = (props: { items: any[] }) => {
                                 <FontAwesomeIcon
                                     icon={item.icon}
                                     className={` fa ${item.iconClass}`}
-                                    style={counterIconStyling}>
-                                </FontAwesomeIcon>
-                                <Counter data={{ startNum: 0, endNum: item.itemNumber, delay: getRandomNumber(1, 6), duration: getRandomNumber(1, 5) }} styles={counterNumberStyling}  />
+                                    style={counterIconStyling} />
+                                <Counter data={{ startNum: 0, endNum: item.itemNumber, delay: getRandomNumber(1, 6), duration: getRandomNumber(1, 5) }} styles={counterNumberStyling} />
                                 <p style={counterTextStyling}>{item.text}</p>
                             </div>
                         </div>
