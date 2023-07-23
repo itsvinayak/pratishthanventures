@@ -2,7 +2,7 @@ import Link from "next/link";
 
 
 const styling = {
-    heigh: "100vh"
+    height: "100vh"
 };
 
 const BaseContantUs = () => {

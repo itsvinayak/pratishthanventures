@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: 'Pratishthan software ventures',
-    description: '',
+    description: 'Pratishthan Software Ventures Pvt. Ltd. provides engineering and architectural services for niche enterprise products in the area of financial services. Over last few years, team has architected and engineered Next Generation B2B and B2C Payment platform which allows all different types of payment including subsidy payments. For another customer, team has also developed a next generation mobile assistant platform. For another customer team is working on a live streaming platform. For another customer, team is also working on next generation notification system which allows large banks to send across different notifications via different channels.',
     icons: '../public/logo.png',
 }
 

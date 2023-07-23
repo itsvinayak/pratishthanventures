@@ -1,7 +1,27 @@
 {
   "name": "pratishthanventures",
   "version": "0.1.0",
-  "private": true,
+  "description": "Pratishthan Software Ventures",
+  "author": {
+    "name": "vinayak sharma",
+    "email": "itssvinayak@gmail.com"
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "vinayak sharma",
+      "email": "itssvinayak@gmail.com"
+    }
+  ],
+  "keywords": [
+    "next",
+    "next.js",
+    "react",
+    "Software",
+    "Ventures",
+    "Pratishthan",
+    "Pratishthan Software Ventures"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
