@@ -1,6 +1,22 @@
+import React from "react";
+import DisplayCounter from "./displayCounter";
+import { faBriefcase, faCode, faUsers, faCogs } from "@fortawesome/free-solid-svg-icons";
+
+
+const displayItem = [{ 'text': 'YEARS OF EXPERIENCE', 'itemNumber': 20, iconClass: "fa fa-briefcase", icon: faBriefcase },
+{ 'text': 'NUMBER OF PROJECTS', 'itemNumber': 100, iconClass: "fa fa-code", icon: faCode },
+{ 'text': 'NUMBER OF CLIENTS', 'itemNumber': 10, iconClass: "fa fa-users", icon: faUsers },
+{ 'text': 'NUMBER OF ARCHITECTURE BUILD', 'itemNumber': 90, iconClass: "fa fa-cogs", icon: faCogs }]
+
+
+const styling = {
+    height: "100vh",
+    backgroundColor: "#d9743f",
+};
+
 const Expectation = () => {
     return (
-        <div style={{ backgroundColor: "#d9743f" }} className="p-5">
+        <div style={styling} className="p-5">
             <div className="container">
                 <h3><b>OUR</b> EXPERIENCE</h3>
                 <hr className="my-4" />
@@ -20,6 +36,9 @@ const Expectation = () => {
                     <span className="lead"
                     >In fact, 30% of our people have over a decade of hands-on
                         technology experience.</span>
+                    <div className="col-lg-12">
+                        <DisplayCounter items={displayItem} />
+                    </div>
                 </div>
             </div>
         </div>

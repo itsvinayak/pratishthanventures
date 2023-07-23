@@ -1,5 +1,10 @@
 import React from "react";
+import Image from "next/image";
+import ApproachImage from "../public/approachs.png";
 
+const styling = {
+  height: "100vh"
+};
 
 const approachPoints = [
   { 'title': 'Holistic Approach', 'description': 'Our company takes a holistic approach to address technology-related challenges. They understand that successful solutions require a deep understanding of both business and technology aspects. This approach ensures that their recommendations and solutions align with the overall business objectives and are technically feasible.' },
@@ -16,7 +21,7 @@ const approachPoints = [
 
 const Approach = () => {
   return (
-    <div className="container p-5">
+    <div style={styling} className="container p-5">
       <h3><b>OUR</b> APPROACH</h3>
       <hr className="my-4" />
       <div className="row">
@@ -35,11 +40,12 @@ const Approach = () => {
           </span>
         </div>
         <div className="col-lg-6">
-          <img
-            src="./image/services.png"
+          <Image
+            src={ApproachImage.src}
             className="image-hover"
-            width="80%"
-            height="80%"
+            alt="approach"
+            width={500}
+            height={500}
           />
         </div>
       </div>
