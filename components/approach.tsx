@@ -21,7 +21,7 @@ const approachPoints = [
 
 const Approach = () => {
   return (
-    <div style={styling} className="container pt-6 pb-10">
+    <div style={styling} className="container pt-5">
       <h3><b>OUR</b> APPROACH</h3>
       <hr className="my-4" />
       <div className="row">
