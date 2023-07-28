@@ -5,7 +5,13 @@ import React from 'react';
 import Link from 'next/link';
 import logo from '../../public/logo.png';
 
-const navOptions = [{'name': 'Home', 'link': '/'}, {'name': 'About', 'link': '/about'}, {'name': 'Contact', 'link': '/contact'}];
+const navOptions = [
+    { 'name': 'Home', 'link': '/' },
+    { 'name': 'About', 'link': '/about' },
+    { 'name': 'Contact', 'link': '/contact' },
+    { 'name': 'Life', 'link': '/life' },
+    { 'name': 'Blog', 'link': '/blog' }
+];
 
 const NavBar = () => {
     return (

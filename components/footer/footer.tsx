@@ -21,7 +21,7 @@ const socialIcons = [
         icon: faInstagram
     },
     {
-        href: "#!",
+        href: "https://www.linkedin.com/company/pratishthan-software-ventures-pvt.-ltd/mycompany/",
         icon: faLinkedin
     },
     {
