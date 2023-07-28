@@ -5,7 +5,7 @@ const styling = {
     minHeight: "100vh"
 };
 
-const BaseContantUs = () => {
+const BaseContactUs = () => {
     return (
         <div style={styling} className="container p-lg-5 text-center">
             <h3>{`We're living it up in beautiful`} <b>Bangalore</b></h3>
@@ -34,4 +34,4 @@ const BaseContantUs = () => {
 };
 
 
-export default BaseContantUs;
+export default BaseContactUs;

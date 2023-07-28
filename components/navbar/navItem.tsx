@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface NavItemsProps {
@@ -13,7 +14,7 @@ const NavItems = (props: NavItemsProps) => {
             {props.items.map((item, index) => {
                 return (
                     <li className="nav-item" key={index}>
-                        <a className="nav-link active" aria-current="page" href={item.link}>{item.name}</a>
+                        <Link className="nav-link active" aria-current="page" href={item.link}>{item.name}</Link>
                     </li>
                 );
             })}
