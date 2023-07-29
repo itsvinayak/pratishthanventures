@@ -37,18 +37,18 @@ const Contact = () => {
                             <div className="col-lg-6">
                                 <h4>Address</h4>
                                 <p>
-                                    Pratishthan Software Ventures Pvt. Ltd.
+                                    {`Pratishthan Software Ventures Pvt. Ltd.`}
                                     <br />
-                                    1st Floor, 1st Main, 1st Cross, 1st Block,
+                                    {`1st Floor, 1st Main, 1st Cross, 1st Block,`}
                                     <br />
-                                    Koramangala, Bangalore - 560034
+                                    {`Koramangala, Bangalore - 560034`}
                                 </p>
                             </div>
                             <div className="col-lg-4">
                                 <h4>Email</h4>
                                 <p>
                                     <a href="mailto:info@pratishthanventures.com" className="text-decoration-none">
-                                        info@pratishthanventures.com
+                                        {`info@pratishthanventures.com`}
                                     </a>
                                 </p>
                             </div>

@@ -36,7 +36,7 @@ const EmailForm = () => {
                 <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div className="mb-3 col-lg-6">
-                <label htmlFor="your mobile" id="mobile" className="form-label">Mobile No. </label>
+                <label htmlFor="your mobile" id="mobile" className="form-label">{`Mobile No.`} </label>
                 <input type="password" className="form-control" id="exampleInputPassword1" />
             </div>
             <div className="mb-3 col-lg-12">
