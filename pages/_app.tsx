@@ -1,13 +1,14 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import '../styles/global.css';
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Router from "next/router";
 import PageLoader from "@/components/ui/pageLoader";
 config.autoAddCss = false;
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,6 +25,8 @@ interface Props {
     Component: any
     pageProps: any
 }
+
+
 
 const RootLayout = ({ Component, pageProps }: Props) => {
     const [loading, setLoading] = useState(false);
@@ -49,4 +52,4 @@ const RootLayout = ({ Component, pageProps }: Props) => {
 
 
 
-export default RootLayout
+export default RootLayout 

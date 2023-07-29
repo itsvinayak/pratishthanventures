@@ -8,7 +8,6 @@ import BaseContactUs from "@/components/baseContactUs";
 import Footer from "@/components/footer/footer";
 
 
-
 const Home = () => {
     return (
         <>
@@ -16,9 +15,9 @@ const Home = () => {
             <BaseHeader />
             <Approach />
             <Expectation />
-            <Work/>
-            <BaseContactUs/>
-            <Footer/>
+            <Work />
+            <BaseContactUs />
+            <Footer />
         </>
     )
 };
