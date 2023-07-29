@@ -26,7 +26,7 @@ const Contact = () => {
                     <div className="col-lg-12 py-5 my-5">
                         {`Our dedicated team of experts is here to support you and provide solutions to your queries.
                         Whether you have questions about our products, services, or need professional assistance in your specific area,
-                        we are just a message away. Feel free to reach out to us, and we'll be delighted to help you.'}
+                        we are just a message away. Feel free to reach out to us, and we'll be delighted to help you.`}
                     </div>
                 </div>
                 <div className="row">
