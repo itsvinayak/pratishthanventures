@@ -5,7 +5,7 @@ const styling = {
     backgroundImage: `url( ${baseHeaderBackground.src} )`,
     backgroundPosition: "center",
     minHeight: "100vh",
-    width: "100vw",
+    width: "100%",
     position: "relative" as const,
     marginLeft: "auto" as const,
     marginRight: "auto" as const,

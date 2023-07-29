@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/global.css';
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Router from "next/router";
+import PageLoader from "@/components/ui/pageLoader";
 config.autoAddCss = false;
 
 
@@ -24,10 +26,27 @@ interface Props {
 }
 
 const RootLayout = ({ Component, pageProps }: Props) => {
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
         require("bootstrap/dist/js/bootstrap.bundle.min.js");
+        const start = () => {
+            setLoading(true)
+        }
+        const end = () => {
+            setLoading(false)
+        }
+        Router.events.on("routeChangeStart", start)
+        Router.events.on("routeChangeComplete", end)
+        Router.events.on("routeChangeError", end)
+        return () => {
+            Router.events.off("routeChangeStart", start)
+            Router.events.off("routeChangeComplete", end)
+            Router.events.off("routeChangeError", end)
+        }
     }, []);
-    return <Component {...pageProps} />
+    return loading ? <PageLoader /> : <Component {...pageProps} />
 }
+
+
 
 export default RootLayout
