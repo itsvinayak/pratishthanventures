@@ -33,7 +33,7 @@ const EmailForm = () => {
             <div className="mb-3 col-lg-6">
                 <label htmlFor="your Email" className="form-label">Your Email address</label>
                 <input type="email" id="email" className="form-control" aria-describedby="emailHelp" />
-                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                <div id="emailHelp" className="form-text">{`We'll never share your email with anyone else.`}</div>
             </div>
             <div className="mb-3 col-lg-6">
                 <label htmlFor="your mobile" id="mobile" className="form-label">{`Mobile No.`} </label>
