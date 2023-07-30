@@ -16,9 +16,6 @@ const EmailForm = () => {
         }
         // api call
         let emailApi = '/api/sendMail';
-         
-        
-        console.log(data);
     }
     return (
         <form onSubmit={handleSubmit} className="row py-4 my-4">

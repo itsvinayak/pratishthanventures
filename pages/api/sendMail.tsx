@@ -25,7 +25,6 @@ const mailHandler = async (req: any, res: any) => {
                 break;
         }
     } catch (err: any) {
-        console.warn(err);
         res.status(400).send("Email not sent");
     }
 

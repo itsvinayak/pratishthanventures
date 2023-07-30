@@ -20,10 +20,8 @@ const sendMail = async (subject: any, toEmail: any, otpText: any) => {
 
     transporter.sendMail(mailOptions, function (error: any, _info) {
         if (error) {
-            console.log(error);
             return false;
         } else {
-            console.log("Email Sent");
             return true;
         }
     });

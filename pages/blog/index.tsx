@@ -22,16 +22,16 @@ const BlogPage = ({ posts }: any) => {
     return (
         <>
             <NavBar />
-            <div className="container-fluid pt-5 mt-5" style={styling}>
-                <div className="row d-flex align-items-center justify-content-center ">
-                    <div className="col-md-10 text-center display-3 p-2" style={{backgroundColor: "#f2f2f2"}}>
-                        Blog
+            <div className="container pt-5 mt-5" style={styling}>
+                <div className="row d-flex align-items-center justify-content-center shadow p-3 mb-5 bg-white rounded ">
+                    <div className="col-lg-12 text-center lead display-3 p-2 text-white" style={{ backgroundColor: "#DA753F" }}>
+                        The Pratishthan Blog
                     </div>
                 </div>
                 <div className="row">
                     {posts.map((post: any) => {
                         return (
-                            <div className="col-md-4 p-3" key={post.slug}>
+                            <div className="col-lg-6 p-3" key={post.slug}>
                                 <BlogCard post={post} />
                             </div>
                         )
