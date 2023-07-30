@@ -6,13 +6,13 @@ import Footer from "@/components/footer/footer";
 import backgroundImageSrc from "@/public/background.png";
 
 const styling = {
-    backgroundImage: `linear-gradient(180deg, #FFFFFF 19%, #FFFFFF 85%), url(${backgroundImageSrc.src})`,
+    backgroundImage: `linear-gradient(180deg, #FFFFFF 100%, #FFFFFF 100%), url(${backgroundImageSrc.src})`,
     backgroundRepeat: "no-repeat",
-    backgroundColor: "transparent",
+    backgroundColor: "white",
     backgroundSize: "50%",
     backgroundPosition: "center",
     minHeight: "100vh",
-    minWidth: "100vw",
+    minWidth: "90vw",
     backgroundBlendMode: "multiply" as const,
     position: "relative" as const,
     marginLeft: "auto" as const,

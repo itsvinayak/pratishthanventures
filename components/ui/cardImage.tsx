@@ -13,25 +13,30 @@ interface CardImageProps {
 const CardImage = (props: CardImageProps) => {
     let title: any = "";
     let description: any = "";
+    let imageDescription: any = "";
     if (props.image.title) {
         title = <h5 className="card-title text-center pt-2">{props.image.title}</h5>
     }
     if (props.image.description) {
         description = <p className="card-text text-center pt-2">{props.image.description}</p>
     }
-    return (
-        <div className="card m-4">
+    if(props.image.title || props.image.description){
+        imageDescription = (
             <div className="card-body">
-                <Image src={props.image.src}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    alt="image"
-                    height="0"
-                    width="500"
-                    style={{ height: '20rem' }}
-                    className="img-fluid" />
                 {title}
                 {description}
             </div>
+        )
+    }
+    return (
+        <div className="card m-3">
+            <Image src={props.image.src}
+                alt="image"
+                height="0"
+                width="500"
+                style={{ height: '20rem' }}
+                className="img-fluid card-img-top rounded" />
+            {imageDescription}
         </div>
     )
 }

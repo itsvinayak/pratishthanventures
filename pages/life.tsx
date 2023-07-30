@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 import CardImage from "@/components/ui/cardImage";
 import image1 from "@/public/officePics/a-team-that-eats-together-laughs-together.jpg";
 import image2 from "@/public/officePics/celebrating-success.jpg";
-import image3 from "@/public/officePics/ethnic-day-2019.jpg"; 
+import image3 from "@/public/officePics/ethnic-day-2019.jpg";
+import drawPF from "@/public/drawPF.png";
 
 const styling = {
     minHeight: "100vh"
@@ -17,18 +18,12 @@ const styling = {
 const images = [
     {
         id: 1,
-        src: image1.src,
-        title: null,
-        description: null
-    },
-    {
-        id: 2,
         src: image2.src,
         title: null,
         description: null
     },
     {
-        id: 3,
+        id: 2,
         src: image3.src,
         title: null,
         description: null
@@ -66,7 +61,7 @@ const Life = () => {
                     <div className="row pt-5">
                         {images.map((image) => {
                             return (
-                                <div className="col-lg-4" key={image.id}>
+                                <div className="col-sm-6" key={image.id}>
                                     <motion.div
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
@@ -80,15 +75,20 @@ const Life = () => {
                     </div>
                 </div>
                 <div className="row text-center" style={styling}>
-                    <hr />
-                    <motion.div
-                        className="display-2"
-                        initial={{ scaleX: 0 }}
-                        whileInView={{ scaleX: 1 }}
-                    >
-                        We are the Pratishthan Family
-                    </motion.div>
-                    <hr />
+                    <div className="col-lg-12">
+                        <motion.div
+                            className="display-2"
+                            initial={{ scaleX: 0 }}
+                            whileInView={{ scaleX: 1 }}
+                        >
+                            We are the Pratishthan Family
+                        </motion.div>
+                        <Image src={drawPF.src}
+                            width={500}
+                            height={500}
+                            alt="image"
+                            className="img-fluid" />
+                    </div>
                 </div>
             </div>
             <BaseContactUs />
