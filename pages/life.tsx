@@ -84,10 +84,10 @@ const Life = () => {
                             We are the Pratishthan Family
                         </motion.div>
                         <Image src={drawPF.src}
-                            width={500}
-                            height={500}
+                            width={700}
+                            height={700}
                             alt="image"
-                            className="img-fluid" />
+                            className="img-fluid pt-3 mt-3" />
                     </div>
                 </div>
             </div>
