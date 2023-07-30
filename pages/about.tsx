@@ -36,7 +36,7 @@ const About = () => {
     return (
         <>
             <NavBar />
-            <div className="container mt-5 pt-5" style={styling}>
+            <div className="container-fluid mt-5 pt-5" style={styling}>
                 <div className="row text-center">
                     <motion.div initial="hidden" animate="visible" variants={{
                         hidden: {
@@ -51,12 +51,12 @@ const About = () => {
                             }
                         },
                     }}>
-                        <h1>What is <span style={{ color: "#d9743f" }}>Pratishthan</span> ?</h1>
+                        <h1 className="display-3">What is <span style={{ color: "#d9743f" }}>Pratishthan</span> ?</h1>
                     </motion.div>
                     <hr style={hrStyling} />
                 </div>
 
-                <div className="row justify-content-center m-5">
+                <div className="row justify-content-center my-5">
                     <motion.div initial="hidden" animate="visible" variants={{
                         hidden: {
                             scale: .9,
